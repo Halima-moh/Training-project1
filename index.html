@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Wneet</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon"  href="image/21730833_684166538440158_7739141791128812606_n.png" type="image/jpg" />
+<link href="https://fonts.googleapis.com/css?family=Gudea&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/StyleSheet.css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 414px)" href="css/mobile.css">
+<link href="css/animate_1.css" rel="stylesheet"/>
+ </head> 
+ <style>
+   
+ </style>
+<body>
+  <div id="home-page">
+    <div  class="header">
+        <div class="btn-signup"> <a href="index1.php">Sign up</a></div>
+        
+
+        <nav id="overlay">
+            <div class="search-wrapper">
+                <div class="input-holder">
+                    <input type="text" class="search-input" placeholder="Type to search" />
+                    <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                </div>
+                <span class="close" onclick="searchToggle(this, event);"></span>
+            </div>
+            <img  src="https://res.cloudinary.com/diurmfdja/image/upload/v1563013457/close_ra9vti.svg" class="close-btn  close-icon" id="close-menu" />
+            <ul> 
+                <li><a class="active" href="#home-page">Home</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#our-product">Prodduct</a></li>
+                <li ><a href="#">About</a></li>
+                <li ><a href="#">contact</a></li> 
+            </ul>
+            <ul class="social-icons1">
+                <li><a href="https://www.facebook.com/wneetcom/"><i class="fa  fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </nav>
+              <header>
+          <h1>WNEET.</h1>
+          <img src="https://res.cloudinary.com/diurmfdja/image/upload/v1563013457/menu_hgrywy.svg" class="menu-btn" id="open-menu" />
+           </header> 
+            <div class="top-menu1">
+              <div class="menu-btn" onclick="myFunction(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+                <div id="mySidenav" class="sidenav">
+                  <a  class="active" href="#home-page">Home</a>
+                  <div class="line"></div>
+                  <a href="#Portfolio">Portfolio</a>
+                  <a href="#our-product">Product</a>
+                  <a href="#">About</a>
+                  <a href="#">Contact</a>
+                  <p>SOCIAL</p> 
+                  <div class="social-container">
+                      <ul class="social-icons">
+                          <li><a href="https://www.facebook.com/wneetcom/"><i class="fa  fa-facebook"></i></a></li>
+                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                      </ul>
+                      </div>
+                 </div>     
+              </div>
+           
+    </div> 
+<div class="page">
+    <div class="grad">
+      <!-- slider area -->
+           
+        <div class="text-box">      
+            <h3 class="element_anim_6">We're creative agency based in Sanaa, Yemen</h3>
+            <p class="element_anim_7">We are a digital & development agency, specilized in 
+              Design, Web and Mobile Development, content Marketing.
+            </p>
+            <a class="site-btn" data-toggle="modal" data-target="#homeVideo" >Watch the video
+                    <svg class="video-btn" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 41.999 41.999" style="enable-background:new 0 0 41.999 41.999;" xml:space="preserve">
+                    <path d="M36.068,20.176l-29-20C6.761-0.035,6.363-0.057,6.035,0.114C5.706,0.287,5.5,0.627,5.5,0.999v40
+                     c0,0.372,0.206,0.713,0.535,0.886c0.146,0.076,0.306,0.114,0.465,0.114c0.199,0,0.397-0.06,0.568-0.177l29-20
+                     c0.271-0.187,0.432-0.494,0.432-0.823S36.338,20.363,36.068,20.176z"/>
+                   </svg>
+            </a>        
+        </div> 
+        <form class="btn-scroll" action="#Portfolio">
+        <input type="submit" value="scroll downe">
+        <a  href="#Portfolio"class="scroll-down">&#8249;</a>
+        </form>     
+    </div>
+  <!-- Home Video Modal -->
+<div class="modal fade" id="homeVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" onclick="pauseVid()">
+    <div class="modal-dialog" role="document" >
+      <div class="modal-content">
+        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="pauseVid()">X</button>
+        <div class="embed-responsive embed-responsive-16by9" class="video-modal">
+          <video id="gossVideo" class="embed-responsive-item" controls="controls" poster="image/27654675_746230785567066_9168805699975055955_n.jpg">
+            <source src="video/64254545_138291244018838_1656435329687308871_n.mp4" type="video/mp4">
+            <object type="application/x-shockwave-flash" data="https://releases.flowplayer.org/swf/flowplayer-3.2.1.swf"  width="100%" height="100%">
+              <param name="movie" value="https://releases.flowplayer.org/swf/flowplayer-3.2.1.swf">
+              <param name="allowFullScreen" value="true">		<param name="wmode" value="transparent">
+              <param name="flashVars" value="config={'playlist':['http%3A%2F%2Fwww.gossettmktg.com%2Fvideo%2Fdangot.png',{'url':'http%3A%2F%2Fwww.gossettmktg.com%2Fvideo%2Fdangot.mp4','autoPlay':false}]}">
+              <img alt="Big Buck Bunny" src="image/27654675_746230785567066_9168805699975055955_n.jpg" width="100%" height="100%" title="No video playback capabilities, please download the video below">
+            </object>
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <div id="Portfolio">
+   <div class="col-item row-pic">
+     <img  class="port-pic" src="image/59620825_1020855531437922_410732391145930752_n (1).png">
+     <div class="content-details"><h3>Team work..make the dream work</h3>
+      <p>Happy #Labor_day</p>
+    </div>
+  </div>
+   <div class="col-item row-pic">
+     <img  class="port-pic" src="image/31655464_783278801862264_8564450811571077120_n (1).png">
+     <div class="content-details1"><h3>We love what we do</h3>
+      <p>Wneet 2019</p>
+    </div>
+   </div>
+   <div class="col-item row-pic">
+     <img class="port-pic"  src="image/49203697_947769658746510_2985914659212623872_n.png">
+     <div class="content-details2"><h3>Prominent Building</h3>
+      <p>Website.Photography</p>
+    </div>
+   </div>
+   <div class="col-item row-pic">
+     <img  class="port-pic" src="image/41663789_887124781477665_9199506574333181952_n.png">
+     <div class="content-details3"><h3>Programmers Day</h3>
+      <p>#Happy_Programmmers_Day</p>
+    </div>
+   </div>
+   <div class="col-item row-pic">
+     <img class="port-pic"  src="image/37346219_835821939941283_2939942308528783360_n.png">
+     <div class="content-details4"><p>#Worlddemojday</p>
+    </div>
+   </div>
+   <div class="col-item row-pic">
+     <img  class="port-pic" src="image/34050254_796568313866646_5748025582017314816_n.png">
+     <div class="content-details5"><h3>Explorer Guy in The Esat</h3>
+      <p>Website.Photography</p>
+    </div>
+   </div>
+ </div>
+  <div class="site_block our_services">
+    <div class="container">
+    <div class="box-title element_anim_1"><h3>Our Services</h3>
+      <p>we combine design,technology and marketing to help modern brands connect with consumers.</p>
+    </div>
+    <div class="row element_anim_2">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card">
+            <div class="card-icon">
+              <svg  class="pencil-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 469.336 469.336" style="enable-background:new 0 0 469.336 469.336;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M357.267,235.516l99.569-98.681c8.063-8.063,12.5-18.771,12.5-30.167s-4.438-22.104-12.5-30.167l-64-64
+			c-16.125-16.125-44.177-16.156-60.365,0.031l-98.65,99.538L124.878,3.126c-4.167-4.167-10.917-4.167-15.083,0L3.128,109.793
+			c-4.167,4.167-4.167,10.917,0,15.083l109.491,109.491l-66.855,67.457c-1.271,1.281-2.188,2.854-2.688,4.583L0.409,455.741
+			c-1.063,3.719-0.021,7.729,2.719,10.469c2.031,2.031,4.75,3.125,7.542,3.125c0.979,0,1.969-0.135,2.927-0.406l149.333-42.667
+			c1.729-0.5,3.302-1.417,4.583-2.688l67.457-66.855L344.461,466.21c2.083,2.083,4.813,3.125,7.542,3.125
+			c2.729,0,5.458-1.042,7.542-3.125l106.667-106.667c4.167-4.167,4.167-10.917,0-15.083L357.267,235.516z M347.586,27.585
+			c8.063-8.063,22.104-8.063,30.167,0l64,64c4.031,4.031,6.25,9.385,6.25,15.083s-2.219,11.052-6.219,15.052l-47.033,46.613
+			l-93.747-93.747L347.586,27.585z M111.086,202.668l35.125-35.125c4.167-4.167,4.167-10.917,0-15.083
+			c-4.167-4.167-10.917-4.167-15.083,0l-35.125,35.125L68.42,160.001l35.125-35.125c4.167-4.167,4.167-10.917,0-15.083
+			s-10.917-4.167-15.083,0l-35.125,35.125l-27.583-27.583l91.583-91.583l101.47,101.47l-91.172,91.995L111.086,202.668z
+			 M285.989,89.737l39.264,39.264L120.257,333.998l-14.712-29.434c-1.813-3.615-5.5-5.896-9.542-5.896H78.921L285.989,89.737z
+			 M26.201,443.137L40.095,394.5l34.742,34.742L26.201,443.137z M149.336,407.96l-51.035,14.579l-51.503-51.503l14.579-51.035
+			h28.031l18.385,36.771c1.031,2.063,2.708,3.74,4.771,4.771l36.771,18.385V407.96z M170.67,390.417v-17.082
+			c0-4.042-2.281-7.729-5.896-9.542l-29.434-14.712l204.996-204.996l39.264,39.264L170.67,390.417z M352.003,443.585l-27.583-27.583
+			l35.125-35.125c4.167-4.167,4.167-10.917,0-15.083c-4.167-4.167-10.917-4.167-15.083,0l-35.125,35.125l-27.583-27.583
+			l35.125-35.125c4.167-4.167,4.167-10.917,0-15.083c-4.167-4.167-10.917-4.167-15.083,0l-35.125,35.125l-16.548-16.548
+			l91.995-91.172l101.47,101.47L352.003,443.585z"/>
+	</g>
+</svg>
+            </div><br>
+            <div class="card-text">
+                  <div class="card-title">
+                      <h6>Interface Design</h6>
+                  </div>
+                  <div class="card-details">
+                      <p>Asmal river named Duden flows by their place and it with the necessary reglialia. it is
+                        paradisematic country. in wich roasted parts of sentences fly in to your mouth.
+                      </p>
+                  </div>
+                  <ul class="dot">
+                    <li>Asmal river named Duden</li>
+                    <li>Place and suppile</li>
+                    <li>Roasted parts of sentences</li>
+                  </ul>
+              </div>
+          </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card">
+          <div class="card-icon">
+            <svg height="512pt" class="pencil-icon" viewBox="0 -22 512.00002 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m463.285156 0h-337.054687c-4.199219 0-7.605469 3.40625-7.605469 7.605469s3.40625 7.601562 7.605469 7.601562h337.054687c18.476563 0 33.507813 15.03125 33.507813 33.503907v270.589843c0 18.476563-15.03125 33.503907-33.507813 33.503907h-414.574218c-18.472657 0-33.503907-15.027344-33.503907-33.503907v-270.589843c0-18.472657 15.03125-33.503907 33.503907-33.503907h47.101562c4.199219 0 7.605469-3.402343 7.605469-7.601562s-3.40625-7.605469-7.605469-7.605469h-47.101562c-26.859376 0-48.710938 21.851562-48.710938 48.710938v270.589843c0 26.859375 21.851562 48.710938 48.710938 48.710938h122.273437l-14.894531 48.667969h-27.921875c-14.257813 0-25.851563 11.597656-25.851563 25.851562 0 14.257812 11.59375 25.851562 25.851563 25.851562h255.664062c14.253907 0 25.851563-11.59375 25.851563-25.851562 0-14.253906-11.597656-25.851562-25.851563-25.851562h-27.921875l-14.894531-48.667969h122.269531c26.863282 0 48.714844-21.851563 48.714844-48.710938v-270.589843c0-26.859376-21.851562-48.710938-48.714844-48.710938zm-68.808594 442.535156c0 5.867188-4.777343 10.644532-10.644531 10.644532h-255.664062c-5.871094 0-10.644531-4.777344-10.644531-10.644532 0-5.871094 4.773437-10.644531 10.644531-10.644531h255.664062c5.867188 0 10.644531 4.773437 10.644531 10.644531zm-54.472656-25.855468h-168.007812l14.890625-48.664063h138.226562zm0 0"/><path d="m463.84375 247.53125c4.203125 0 7.605469-3.40625 7.605469-7.605469v-191.210937c0-4.503906-3.660157-8.164063-8.164063-8.164063h-414.578125c-4.492187 0-8.148437 3.660157-8.148437 8.164063v247.828125c0 4.199219 3.402344 7.601562 7.601562 7.601562h415.683594c4.203125 0 7.605469-3.402343 7.605469-7.601562v-26.199219c0-4.199219-3.402344-7.601562-7.605469-7.601562-4.199219 0-7.601562 3.402343-7.601562 7.601562v18.59375h-400.476563v-233.179688h400.476563v184.167969c0 4.203125 3.402343 7.605469 7.601562 7.605469zm0 0"/><path d="m262.320312 322.894531c-1.664062-2.53125-4.84375-3.828125-7.808593-3.234375-3.242188.648438-5.761719 3.421875-6.074219 6.71875-.65625 6.875 7.84375 11.011719 12.832031 6.222656 2.632813-2.53125 3.054688-6.667968 1.050781-9.707031zm0 0"/></svg>
+          </div><br>
+          <div class="card-text">
+                <div class="card-title">
+                    <h6>User Experience</h6>
+                </div>
+                <div class="card-details">
+                    <p>Asmal river named Duden flows by their place and it with the necessary reglialia. it is
+                      paradisematic country. in wich roasted parts of sentences fly in to your mouth.
+                    </p>
+                </div>
+                <ul class="dot">
+                  <li>Asmal river named Duden</li>
+                  <li>Place and suppile</li>
+                  <li>Roasted parts of sentences</li>
+                </ul>
+            </div>
+          </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card">
+          <div class="card-icon">
+            <svg  class="pencil-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="565.489px" height="565.489px" viewBox="0 0 565.489 565.489" style="enable-background:new 0 0 565.489 565.489;"
+	 xml:space="preserve">
+<g>
+	<g>
+		<path d="M214.936,433.36c0,0,0.718,7.918,0.707,23.985h-0.707v26.413l139.88-15.483c-0.129-4.379-0.222-7.776-0.269-9.552
+			c-0.397-14.444-0.421-21.252-0.292-24.312c0.14-0.374,0.245-0.677,0.408-1.052h0.164c0,0-0.023-0.163-0.047-0.314
+			c21.836-56.155,96.499-215.945,96.499-264.521C451.256,75.609,375.659,0,282.739,0c-92.921,0-168.53,75.609-168.53,168.524
+			c0,55.367,77.291,208.121,101.065,264.836H214.936z M282.739,23.915c79.749,0,144.627,64.866,144.627,144.609
+			c0,41.051-67.891,187.043-97.691,263.085l-88.763,1.005c-31.389-74.057-102.788-216.628-102.788-264.09
+			C138.124,88.781,202.99,23.915,282.739,23.915z"/>
+		<path d="M214.936,509.788c-0.572,0.396-1.051,6.865,1.354,15.215l137.989-15.285c0.046-0.992,0.104-1.857,0.222-2.499
+			c0.514-3.258,0.678-10.451,0.654-18.38l-140.219,15.543V509.788z"/>
+		<path d="M286.23,565.487c45.71,0.223,60.423-18.345,65.327-34.844l-124.46,13.802C237.215,555.655,254.982,565.334,286.23,565.487
+			z"/>
+	</g>
+</g>
+</svg>
+          </div><br>
+          <div class="card-text">
+                <div class="card-title">
+                    <h6>Proudect Strategey</h6>
+                </div>
+                <div class="card-details">
+                    <p>Asmal river named Duden flows by their place and it with the necessary reglialia. it is
+                      paradisematic country. in wich roasted parts of sentences fly in to your mouth.
+                    </p>
+                </div>
+                <ul class="dot">
+                  <li>Asmal river named Duden</li>
+                  <li>Place and suppile</li>
+                  <li>Roasted parts of sentences</li>
+                </ul>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<form  action="#" class=" btn-effect btn-first element_anim_3">
+  <input  type="submit" value="View All Services">
+ </form>
+</div>  
+<div id="our-product">
+<div class="site_block">
+  <div class="container">
+  <div class="box-title1 element_anim_1"><h3>Our Product</h3>
+    <p>we can help client thrive in this new world Because we've been helping to creat it for the past 12 year.Our digital
+      Thinking.User-centric view and ability to rethink and realize with agility and learning-informed strategies offer 
+      practical,significant Business-critical advantages in these transformative times..
+    </p>
+  </div>
+  <div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="card1 element_anim_2">
+          <div class="card-image">
+            <img src="image/web-designer-vs-web-developer-screen-with-code-on-it.jpg">
+          </div><br>
+          <div class="card-text">
+                <div class="card-title1">
+                    <h6>WEB DESIGN AND DEVLOPER</h6>
+                </div>
+                <div class="card-details-text">
+                    <p>Our html and css expertis bring our creative team's work to life and make Suer it looks great on All
+                      devices.we use best-in-class Products.Such as wordpress as the basis for our Website.
+                    </p>
+                </div>
+          </div>
+                <div class="card-icon1">
+                <svg  class="star-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	               viewBox="0 0 55.867 55.867" style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
+               <path d="M55.818,21.578c-0.118-0.362-0.431-0.626-0.808-0.681L36.92,18.268L28.83,1.876c-0.168-0.342-0.516-0.558-0.896-0.558
+                	s-0.729,0.216-0.896,0.558l-8.091,16.393l-18.09,2.629c-0.377,0.055-0.689,0.318-0.808,0.681c-0.117,0.361-0.02,0.759,0.253,1.024
+                	l13.091,12.76l-3.091,18.018c-0.064,0.375,0.09,0.754,0.397,0.978c0.309,0.226,0.718,0.255,1.053,0.076l16.182-8.506l16.18,8.506
+                 	c0.146,0.077,0.307,0.115,0.466,0.115c0.207,0,0.413-0.064,0.588-0.191c0.308-0.224,0.462-0.603,0.397-0.978l-3.09-18.017
+	                l13.091-12.761C55.838,22.336,55.936,21.939,55.818,21.578z"/>
+                </svg>
+                <svg  class="star-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	               viewBox="0 0 55.867 55.867" style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
+               <path d="M55.818,21.578c-0.118-0.362-0.431-0.626-0.808-0.681L36.92,18.268L28.83,1.876c-0.168-0.342-0.516-0.558-0.896-0.558
+                	s-0.729,0.216-0.896,0.558l-8.091,16.393l-18.09,2.629c-0.377,0.055-0.689,0.318-0.808,0.681c-0.117,0.361-0.02,0.759,0.253,1.024
+                	l13.091,12.76l-3.091,18.018c-0.064,0.375,0.09,0.754,0.397,0.978c0.309,0.226,0.718,0.255,1.053,0.076l16.182-8.506l16.18,8.506
+                 	c0.146,0.077,0.307,0.115,0.466,0.115c0.207,0,0.413-0.064,0.588-0.191c0.308-0.224,0.462-0.603,0.397-0.978l-3.09-18.017
+	                l13.091-12.761C55.838,22.336,55.936,21.939,55.818,21.578z"/>
+                </svg>
+                <svg  class="star-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	               viewBox="0 0 55.867 55.867" style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
+               <path d="M55.818,21.578c-0.118-0.362-0.431-0.626-0.808-0.681L36.92,18.268L28.83,1.876c-0.168-0.342-0.516-0.558-0.896-0.558
+                	s-0.729,0.216-0.896,0.558l-8.091,16.393l-18.09,2.629c-0.377,0.055-0.689,0.318-0.808,0.681c-0.117,0.361-0.02,0.759,0.253,1.024
+                	l13.091,12.76l-3.091,18.018c-0.064,0.375,0.09,0.754,0.397,0.978c0.309,0.226,0.718,0.255,1.053,0.076l16.182-8.506l16.18,8.506
+                 	c0.146,0.077,0.307,0.115,0.466,0.115c0.207,0,0.413-0.064,0.588-0.191c0.308-0.224,0.462-0.603,0.397-0.978l-3.09-18.017
+	                l13.091-12.761C55.838,22.336,55.936,21.939,55.818,21.578z"/>
+                </svg>
+                <svg  class="star-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	               viewBox="0 0 55.867 55.867" style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
+               <path d="M55.818,21.578c-0.118-0.362-0.431-0.626-0.808-0.681L36.92,18.268L28.83,1.876c-0.168-0.342-0.516-0.558-0.896-0.558
+                	s-0.729,0.216-0.896,0.558l-8.091,16.393l-18.09,2.629c-0.377,0.055-0.689,0.318-0.808,0.681c-0.117,0.361-0.02,0.759,0.253,1.024
+                	l13.091,12.76l-3.091,18.018c-0.064,0.375,0.09,0.754,0.397,0.978c0.309,0.226,0.718,0.255,1.053,0.076l16.182-8.506l16.18,8.506
+                 	c0.146,0.077,0.307,0.115,0.466,0.115c0.207,0,0.413-0.064,0.588-0.191c0.308-0.224,0.462-0.603,0.397-0.978l-3.09-18.017
+	                l13.091-12.761C55.838,22.336,55.936,21.939,55.818,21.578z"/>
+                </svg>
+                <svg  class="star-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	               viewBox="0 0 55.867 55.867" style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
+               <path d="M55.818,21.578c-0.118-0.362-0.431-0.626-0.808-0.681L36.92,18.268L28.83,1.876c-0.168-0.342-0.516-0.558-0.896-0.558
+                	s-0.729,0.216-0.896,0.558l-8.091,16.393l-18.09,2.629c-0.377,0.055-0.689,0.318-0.808,0.681c-0.117,0.361-0.02,0.759,0.253,1.024
+                	l13.091,12.76l-3.091,18.018c-0.064,0.375,0.09,0.754,0.397,0.978c0.309,0.226,0.718,0.255,1.053,0.076l16.182-8.506l16.18,8.506
+                 	c0.146,0.077,0.307,0.115,0.466,0.115c0.207,0,0.413-0.064,0.588-0.191c0.308-0.224,0.462-0.603,0.397-0.978l-3.09-18.017
+	                l13.091-12.761C55.838,22.336,55.936,21.939,55.818,21.578z"/>
+                </svg>
+              </div>
+              <div class="line-visibale"></div>
+              <div class="like-unlike-icon">
+              <svg  class="like-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M83.578,167.256H16.716C7.524,167.256,0,174.742,0,183.971v300.881c0,9.225,7.491,16.713,16.716,16.713h66.862
+			c9.225,0,16.716-7.489,16.716-16.713V183.971C100.294,174.742,92.769,167.256,83.578,167.256z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M470.266,167.256c-2.692-0.456-128.739,0-128.739,0l17.606-48.032c12.148-33.174,4.283-83.827-29.424-101.835
+			c-10.975-5.864-26.309-8.809-38.672-5.697c-7.09,1.784-13.321,6.478-17.035,12.767c-4.271,7.233-3.83,15.676-5.351,23.696
+			c-3.857,20.342-13.469,39.683-28.354,54.2c-25.952,25.311-106.571,98.331-106.571,98.331v267.45h278.593
+			c37.592,0.022,62.228-41.958,43.687-74.749c22.101-14.155,29.66-43.97,16.716-66.862c22.102-14.155,29.66-43.97,16.716-66.862
+			C527.572,235.24,514.823,174.792,470.266,167.256z"/>
+	</g>
+</svg>
+<p>5.216</p>
+<svg   class="unlike-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       width="151.048px" height="151.049px" viewBox="0 0 151.048 151.049" style="enable-background:new 0 0 151.048 151.049;"
+       xml:space="preserve">
+    <g>
+      <path d="M133.893,45.886c2.466,2.466,2.466,6.465,0,8.932l-26.971,26.969c-2.467,2.467-4.466,4.518-4.466,4.579
+        s-10.901,20.56-26.858,31.03c-15.959,10.474-11.471,18.951-11.471,27.43c0,7.143-8.849,8.975-14.917,1.025
+        c-2.116-2.771-4.194-8.148-4.61-11.611c-1.262-10.523,5.621-17.534,8.152-21.331c1.713-2.569,2.7-7.332,0.917-13.252H12.786
+        c-8.086,0-12.459-6.226-9.719-13.832l20.802-57.738c1.178-3.268,4.983-5.942,8.457-5.942h49.126c3.475,0,8.326-2.01,10.782-4.466
+        l2.26-2.26c2.467-2.466,6.467-2.466,8.934,0L133.893,45.886z M112.68,0l-8.27,8.269l36.118,36.119l8.271-8.269L112.68,0z"/>
+    </g>
+    </svg>
+    
+<h6>32</h6>
+    
+</div>
+ </div>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="card1 element_anim_3">
+        <div class="card-image">
+          <img src="image/thumb.jfif">
+        </div><br>
+        <div class="card-text">
+              <div class="card-title1">
+                  <h6>SOCAIL MEDIA</h6>
+              </div>
+              <div class="card-details-text">
+                  <p>social media helps us to define social purpose.This strategy first approach follows with actionable plans to drive 
+                      results which are aligned to business goals.
+                  </p>
+              </div>
+              <div class="card-icon1">
+                  <svg  class="star-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 55.867 55.867" style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
+                 <path d="M55.818,21.578c-0.118-0.362-0.431-0.626-0.808-0.681L36.92,18.268L28.83,1.876c-0.168-0.342-0.516-0.558-0.896-0.558
+                    s-0.729,0.216-0.896,0.558l-8.091,16.393l-18.09,2.629c-0.377,0.055-0.689,0.318-0.808,0.681c-0.117,0.361-0.02,0.759,0.253,1.024
+                    l13.091,12.76l-3.091,18.018c-0.064,0.375,0.09,0.754,0.397,0.978c0.309,0.226,0.718,0.255,1.053,0.076l16.182-8.506l16.18,8.506
+                     c0.146,0.077,0.307,0.115,0.466,0.115c0.207,0,0.413-0.064,0.588-0.191c0.308-0.224,0.462-0.603,0.397-0.978l-3.09-18.017
+                    l13.091-12.761C55.838,22.336,55.936,21.939,55.818,21.578z"/>
+                  </svg>
+                  <svg  class="star-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 55.867 55.867" style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
+                 <path d="M55.818,21.578c-0.118-0.362-0.431-0.626-0.808-0.681L36.92,18.268L28.83,1.876c-0.168-0.342-0.516-0.558-0.896-0.558
+                    s-0.729,0.216-0.896,0.558l-8.091,16.393l-18.09,2.629c-0.377,0.055-0.689,0.318-0.808,0.681c-0.117,0.361-0.02,0.759,0.253,1.024
+                    l13.091,12.76l-3.091,18.018c-0.064,0.375,0.09,0.754,0.397,0.978c0.309,0.226,0.718,0.255,1.053,0.076l16.182-8.506l16.18,8.506
+                     c0.146,0.077,0.307,0.115,0.466,0.115c0.207,0,0.413-0.064,0.588-0.191c0.308-0.224,0.462-0.603,0.397-0.978l-3.09-18.017
+                    l13.091-12.761C55.838,22.336,55.936,21.939,55.818,21.578z"/>
+                  </svg>
+                  <svg  class="star-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 55.867 55.867" style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
+                 <path d="M55.818,21.578c-0.118-0.362-0.431-0.626-0.808-0.681L36.92,18.268L28.83,1.876c-0.168-0.342-0.516-0.558-0.896-0.558
+                    s-0.729,0.216-0.896,0.558l-8.091,16.393l-18.09,2.629c-0.377,0.055-0.689,0.318-0.808,0.681c-0.117,0.361-0.02,0.759,0.253,1.024
+                    l13.091,12.76l-3.091,18.018c-0.064,0.375,0.09,0.754,0.397,0.978c0.309,0.226,0.718,0.255,1.053,0.076l16.182-8.506l16.18,8.506
+                     c0.146,0.077,0.307,0.115,0.466,0.115c0.207,0,0.413-0.064,0.588-0.191c0.308-0.224,0.462-0.603,0.397-0.978l-3.09-18.017
+                    l13.091-12.761C55.838,22.336,55.936,21.939,55.818,21.578z"/>
+                  </svg>
+                  <svg  class="star-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 55.867 55.867" style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
+                 <path d="M55.818,21.578c-0.118-0.362-0.431-0.626-0.808-0.681L36.92,18.268L28.83,1.876c-0.168-0.342-0.516-0.558-0.896-0.558
+                    s-0.729,0.216-0.896,0.558l-8.091,16.393l-18.09,2.629c-0.377,0.055-0.689,0.318-0.808,0.681c-0.117,0.361-0.02,0.759,0.253,1.024
+                    l13.091,12.76l-3.091,18.018c-0.064,0.375,0.09,0.754,0.397,0.978c0.309,0.226,0.718,0.255,1.053,0.076l16.182-8.506l16.18,8.506
+                     c0.146,0.077,0.307,0.115,0.466,0.115c0.207,0,0.413-0.064,0.588-0.191c0.308-0.224,0.462-0.603,0.397-0.978l-3.09-18.017
+                    l13.091-12.761C55.838,22.336,55.936,21.939,55.818,21.578z"/>
+                  </svg>
+                  <svg  class="star-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	               viewBox="0 0 55.867 55.867" style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
+               <path d="M55.818,21.578c-0.118-0.362-0.431-0.626-0.808-0.681L36.92,18.268L28.83,1.876c-0.168-0.342-0.516-0.558-0.896-0.558
+                	s-0.729,0.216-0.896,0.558l-8.091,16.393l-18.09,2.629c-0.377,0.055-0.689,0.318-0.808,0.681c-0.117,0.361-0.02,0.759,0.253,1.024
+                	l13.091,12.76l-3.091,18.018c-0.064,0.375,0.09,0.754,0.397,0.978c0.309,0.226,0.718,0.255,1.053,0.076l16.182-8.506l16.18,8.506
+                 	c0.146,0.077,0.307,0.115,0.466,0.115c0.207,0,0.413-0.064,0.588-0.191c0.308-0.224,0.462-0.603,0.397-0.978l-3.09-18.017
+	                l13.091-12.761C55.838,22.336,55.936,21.939,55.818,21.578z"/>
+                </svg>
+                </div>
+                <div class="line-visibale"></div>
+                <div class="like-unlike-icon">
+                    <svg  class="like-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
+      <g>
+        <g>
+          <path d="M83.578,167.256H16.716C7.524,167.256,0,174.742,0,183.971v300.881c0,9.225,7.491,16.713,16.716,16.713h66.862
+            c9.225,0,16.716-7.489,16.716-16.713V183.971C100.294,174.742,92.769,167.256,83.578,167.256z"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <path d="M470.266,167.256c-2.692-0.456-128.739,0-128.739,0l17.606-48.032c12.148-33.174,4.283-83.827-29.424-101.835
+            c-10.975-5.864-26.309-8.809-38.672-5.697c-7.09,1.784-13.321,6.478-17.035,12.767c-4.271,7.233-3.83,15.676-5.351,23.696
+            c-3.857,20.342-13.469,39.683-28.354,54.2c-25.952,25.311-106.571,98.331-106.571,98.331v267.45h278.593
+            c37.592,0.022,62.228-41.958,43.687-74.749c22.101-14.155,29.66-43.97,16.716-66.862c22.102-14.155,29.66-43.97,16.716-66.862
+            C527.572,235.24,514.823,174.792,470.266,167.256z"/>
+        </g>
+      </svg>
+      <p>5.923</p>
+      <svg   class="unlike-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="151.048px" height="151.049px" viewBox="0 0 151.048 151.049" style="enable-background:new 0 0 151.048 151.049;"
+             xml:space="preserve">
+          <g>
+            <path d="M133.893,45.886c2.466,2.466,2.466,6.465,0,8.932l-26.971,26.969c-2.467,2.467-4.466,4.518-4.466,4.579
+              s-10.901,20.56-26.858,31.03c-15.959,10.474-11.471,18.951-11.471,27.43c0,7.143-8.849,8.975-14.917,1.025
+              c-2.116-2.771-4.194-8.148-4.61-11.611c-1.262-10.523,5.621-17.534,8.152-21.331c1.713-2.569,2.7-7.332,0.917-13.252H12.786
+              c-8.086,0-12.459-6.226-9.719-13.832l20.802-57.738c1.178-3.268,4.983-5.942,8.457-5.942h49.126c3.475,0,8.326-2.01,10.782-4.466
+              l2.26-2.26c2.467-2.466,6.467-2.466,8.934,0L133.893,45.886z M112.68,0l-8.27,8.269l36.118,36.119l8.271-8.269L112.68,0z"/>
+          </g>
+          </svg>
+          
+      <h6>12</h6>
+          
+      </div>
+          </div>
+        </div>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="card1 element_anim_4">
+        <div class="card-image">
+          <img src="image/graphic_designer.jpg">
+        </div><br>
+        <div class="card-text">
+              <div class="card-title1">
+                  <h6>GRAPHIC DESIGN</h6>
+              </div>
+              <div class="card-details-text">
+                  <p>Our strategic approach to branding ensures that your identity is more than just a random logo,we 
+                    we craft brands that tell your story.deeply connect with your audience and grow your business.
+                  </p>
+              </div>
+              <div class="card-icon1">
+                  <svg  class="star-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 55.867 55.867" style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
+                 <path d="M55.818,21.578c-0.118-0.362-0.431-0.626-0.808-0.681L36.92,18.268L28.83,1.876c-0.168-0.342-0.516-0.558-0.896-0.558
+                    s-0.729,0.216-0.896,0.558l-8.091,16.393l-18.09,2.629c-0.377,0.055-0.689,0.318-0.808,0.681c-0.117,0.361-0.02,0.759,0.253,1.024
+                    l13.091,12.76l-3.091,18.018c-0.064,0.375,0.09,0.754,0.397,0.978c0.309,0.226,0.718,0.255,1.053,0.076l16.182-8.506l16.18,8.506
+                     c0.146,0.077,0.307,0.115,0.466,0.115c0.207,0,0.413-0.064,0.588-0.191c0.308-0.224,0.462-0.603,0.397-0.978l-3.09-18.017
+                    l13.091-12.761C55.838,22.336,55.936,21.939,55.818,21.578z"/>
+                  </svg>
+                  <svg  class="star-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 55.867 55.867" style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
+                 <path d="M55.818,21.578c-0.118-0.362-0.431-0.626-0.808-0.681L36.92,18.268L28.83,1.876c-0.168-0.342-0.516-0.558-0.896-0.558
+                    s-0.729,0.216-0.896,0.558l-8.091,16.393l-18.09,2.629c-0.377,0.055-0.689,0.318-0.808,0.681c-0.117,0.361-0.02,0.759,0.253,1.024
+                    l13.091,12.76l-3.091,18.018c-0.064,0.375,0.09,0.754,0.397,0.978c0.309,0.226,0.718,0.255,1.053,0.076l16.182-8.506l16.18,8.506
+                     c0.146,0.077,0.307,0.115,0.466,0.115c0.207,0,0.413-0.064,0.588-0.191c0.308-0.224,0.462-0.603,0.397-0.978l-3.09-18.017
+                    l13.091-12.761C55.838,22.336,55.936,21.939,55.818,21.578z"/>
+                  </svg>
+                  <svg  class="star-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 55.867 55.867" style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
+                 <path d="M55.818,21.578c-0.118-0.362-0.431-0.626-0.808-0.681L36.92,18.268L28.83,1.876c-0.168-0.342-0.516-0.558-0.896-0.558
+                    s-0.729,0.216-0.896,0.558l-8.091,16.393l-18.09,2.629c-0.377,0.055-0.689,0.318-0.808,0.681c-0.117,0.361-0.02,0.759,0.253,1.024
+                    l13.091,12.76l-3.091,18.018c-0.064,0.375,0.09,0.754,0.397,0.978c0.309,0.226,0.718,0.255,1.053,0.076l16.182-8.506l16.18,8.506
+                     c0.146,0.077,0.307,0.115,0.466,0.115c0.207,0,0.413-0.064,0.588-0.191c0.308-0.224,0.462-0.603,0.397-0.978l-3.09-18.017
+                    l13.091-12.761C55.838,22.336,55.936,21.939,55.818,21.578z"/>
+                  </svg>
+                  <svg  class="star-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 55.867 55.867" style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
+                 <path d="M55.818,21.578c-0.118-0.362-0.431-0.626-0.808-0.681L36.92,18.268L28.83,1.876c-0.168-0.342-0.516-0.558-0.896-0.558
+                    s-0.729,0.216-0.896,0.558l-8.091,16.393l-18.09,2.629c-0.377,0.055-0.689,0.318-0.808,0.681c-0.117,0.361-0.02,0.759,0.253,1.024
+                    l13.091,12.76l-3.091,18.018c-0.064,0.375,0.09,0.754,0.397,0.978c0.309,0.226,0.718,0.255,1.053,0.076l16.182-8.506l16.18,8.506
+                     c0.146,0.077,0.307,0.115,0.466,0.115c0.207,0,0.413-0.064,0.588-0.191c0.308-0.224,0.462-0.603,0.397-0.978l-3.09-18.017
+                    l13.091-12.761C55.838,22.336,55.936,21.939,55.818,21.578z"/>
+                  </svg>
+                  <svg  class="star-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	               viewBox="0 0 55.867 55.867" style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
+               <path d="M55.818,21.578c-0.118-0.362-0.431-0.626-0.808-0.681L36.92,18.268L28.83,1.876c-0.168-0.342-0.516-0.558-0.896-0.558
+                	s-0.729,0.216-0.896,0.558l-8.091,16.393l-18.09,2.629c-0.377,0.055-0.689,0.318-0.808,0.681c-0.117,0.361-0.02,0.759,0.253,1.024
+                	l13.091,12.76l-3.091,18.018c-0.064,0.375,0.09,0.754,0.397,0.978c0.309,0.226,0.718,0.255,1.053,0.076l16.182-8.506l16.18,8.506
+                 	c0.146,0.077,0.307,0.115,0.466,0.115c0.207,0,0.413-0.064,0.588-0.191c0.308-0.224,0.462-0.603,0.397-0.978l-3.09-18.017
+	                l13.091-12.761C55.838,22.336,55.936,21.939,55.818,21.578z"/>
+                </svg>
+                </div>
+                <div class="line-visibale"></div>
+                <div class="like-unlike-icon">
+                    <svg  class="like-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
+      <g>
+        <g>
+          <path d="M83.578,167.256H16.716C7.524,167.256,0,174.742,0,183.971v300.881c0,9.225,7.491,16.713,16.716,16.713h66.862
+            c9.225,0,16.716-7.489,16.716-16.713V183.971C100.294,174.742,92.769,167.256,83.578,167.256z"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <path d="M470.266,167.256c-2.692-0.456-128.739,0-128.739,0l17.606-48.032c12.148-33.174,4.283-83.827-29.424-101.835
+            c-10.975-5.864-26.309-8.809-38.672-5.697c-7.09,1.784-13.321,6.478-17.035,12.767c-4.271,7.233-3.83,15.676-5.351,23.696
+            c-3.857,20.342-13.469,39.683-28.354,54.2c-25.952,25.311-106.571,98.331-106.571,98.331v267.45h278.593
+            c37.592,0.022,62.228-41.958,43.687-74.749c22.101-14.155,29.66-43.97,16.716-66.862c22.102-14.155,29.66-43.97,16.716-66.862
+            C527.572,235.24,514.823,174.792,470.266,167.256z"/>
+        </g>
+      </svg>
+      <p>19.552</p>
+      <svg   class="unlike-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="151.048px" height="151.049px" viewBox="0 0 151.048 151.049" style="enable-background:new 0 0 151.048 151.049;"
+             xml:space="preserve">
+          <g>
+            <path d="M133.893,45.886c2.466,2.466,2.466,6.465,0,8.932l-26.971,26.969c-2.467,2.467-4.466,4.518-4.466,4.579
+              s-10.901,20.56-26.858,31.03c-15.959,10.474-11.471,18.951-11.471,27.43c0,7.143-8.849,8.975-14.917,1.025
+              c-2.116-2.771-4.194-8.148-4.61-11.611c-1.262-10.523,5.621-17.534,8.152-21.331c1.713-2.569,2.7-7.332,0.917-13.252H12.786
+              c-8.086,0-12.459-6.226-9.719-13.832l20.802-57.738c1.178-3.268,4.983-5.942,8.457-5.942h49.126c3.475,0,8.326-2.01,10.782-4.466
+              l2.26-2.26c2.467-2.466,6.467-2.466,8.934,0L133.893,45.886z M112.68,0l-8.27,8.269l36.118,36.119l8.271-8.269L112.68,0z"/>
+          </g>
+          </svg>
+          
+      <h6>7</h6>
+          
+      </div>
+          </div>
+        </div>
+  </div>
+</div>
+</div>
+<form  action="#" class="btn-sconed element_anim_5">
+<input  type="submit" value="View All Services">
+</form>
+</div>
+</div>  
+</div>   
+<footer><a href="#" id="back-to-top" title="Back to top">&uarr;</a></footer>
+<div class="footer">
+    <div id="button"></div>
+  <div id="container">
+      <div id="cotactus">
+          <div>
+           <p class="squar">Contact us</p>
+             
+          </div>
+          
+    <div id="contact_left">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3847.531644698282!2d44.18697768525453!3d15.347667289330236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1603db71e43abb93%3A0xa6a91b72be9c38af!2z2KfZhNio2YbZgyDYp9mE2YrZhdmG2Yog2YTZhNin2YbYtNin2KEg2YjYp9mE2KrYudmF2YrYsQ!5e0!3m2!1sar!2s!4v1567490808764!5m2!1sar!2s" width="750" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe> 
+     </div>
+               <div id="contact_right">
+                   <form>
+                       <input name="Name" required="" type="text" placeholder="Name" class="post" />
+                       <input name="Email" required="" type="text" placeholder="Email" class="post"/>
+                       <input name="Subject" required="" type="text" placeholder="Subject" class="post"/>
+                       <textarea name="Message" required="" placeholder="Message" id="area"></textarea>
+                       <input type="submit" value="SEND" id="send"/>
+                   </form>
+               </div>
+        
+          <div id="call">
+              <div id="example">
+              <div id="broom">
+                  <i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>
+                  Broome St, Canada, NY 10002, USA</div>
+          <div id="callus">Call Us : +10 111 222 3333 </div>
+              <div id="com">
+                  <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+                  <a href="mailto:info@example.com"> mail@example.com</a></div>
+                  </div>
+         </div>
+          </div> 
+  <div id="cont">
+  <div class="footer_center">
+       
+  </div>
+  </div>
+  </div>
+  </div>
+  
+<script src="js/jquery.min1.js"> </script> 
+<script src="js/jquery.min.js"> </script>
+<script src="js/back-to-top.js"> </script>
+<script src="js/top-menu.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/animate_scroll.min.js"> </script> 
+<script src="js/scripts_2.js"> </script>
+<script src="js/video-modal.js"> </script>
+<script src="js/hhh.js"> </script>
+<script src="js/search.js"></script>
+</body>
+</html>
